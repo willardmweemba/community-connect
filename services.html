@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Voltive Electrical Services | Services</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="site-header" id="home">
+    <div class="container header-inner">
+      <a href="index.html#home" class="brand">Voltive</a>
+      <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">🌙</button>
+      <button class="menu-toggle" id="mobileMenuToggle" aria-label="Open navigation">
+        <span></span><span></span><span></span>
+      </button>
+      <nav class="site-nav" id="siteNav">
+        <a href="index.html#home">Home</a>
+        <a href="services.html">Services</a>
+        <a href="about.html">About</a>
+        <a href="index.html#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="section services" id="services" aria-labelledby="services-title">
+      <div class="container">
+        <div class="section-header">
+          <p class="eyebrow">Our Expertise</p>
+          <h2 id="services-title">Electrical Services Built for Safety and Performance</h2>
+          <p class="section-intro">We provide professional electrical solutions tailored to residential and commercial needs.</p>
+        </div>
+        <div class="service-grid">
+          <article class="service-card">
+            <div class="service-icon">🔧</div>
+            <h3>Electrical Installation</h3>
+            <ul>
+              <li>Wiring for homes/buildings</li>
+              <li>Lighting systems</li>
+              <li>Appliance installation</li>
+            </ul>
+            <p class="service-price">Starting from ZMW 1,200</p>
+            <button class="button secondary service-action" type="button" data-service="installation">Request Service</button>
+          </article>
+          <article class="service-card">
+            <div class="service-icon">⚡</div>
+            <h3>System Design</h3>
+            <ul>
+              <li>Electrical planning</li>
+              <li>Load calculation</li>
+              <li>Smart/efficient systems</li>
+            </ul>
+            <p class="service-price">Starting from ZMW 900</p>
+            <button class="button secondary service-action" type="button" data-service="design">Request Service</button>
+          </article>
+          <article class="service-card">
+            <div class="service-icon">🛠️</div>
+            <h3>Maintenance</h3>
+            <ul>
+              <li>Routine inspections</li>
+              <li>Preventive maintenance</li>
+              <li>System upgrades</li>
+            </ul>
+            <p class="service-price">Starting from ZMW 700</p>
+            <button class="button secondary service-action" type="button" data-service="maintenance">Request Service</button>
+          </article>
+          <article class="service-card">
+            <div class="service-icon">🚨</div>
+            <h3>Repair Services</h3>
+            <ul>
+              <li>Fault detection</li>
+              <li>Emergency repairs</li>
+              <li>Troubleshooting</li>
+            </ul>
+            <p class="service-price">Starting from ZMW 800</p>
+            <button class="button secondary service-action" type="button" data-service="repair">Request Service</button>
+          </article>
+        </div>
+
+        <div class="estimate-panel" id="estimate">
+          <div class="estimate-header">
+            <p class="eyebrow">Cost Estimate</p>
+            <h3>Interactive Project Cost Calculator</h3>
+            <p>Choose your service details to get an approximate budget before booking.</p>
+          </div>
+          <form class="estimate-form" id="estimateForm">
+            <div class="estimate-grid">
+              <div class="form-group">
+                <label for="estimateService">Service Type</label>
+                <select id="estimateService" required>
+                  <option value="">Select a service</option>
+                  <option value="installation">Electrical Installation</option>
+                  <option value="design">System Design</option>
+                  <option value="maintenance">Maintenance</option>
+                  <option value="repair">Repair Services</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <label for="projectSize">Project Size</label>
+                <select id="projectSize" required>
+                  <option value="">Select size</option>
+                  <option value="small">Small</option>
+                  <option value="medium">Medium</option>
+                  <option value="large">Large</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <label for="urgencyLevel">Urgency</label>
+                <select id="urgencyLevel" required>
+                  <option value="">Select urgency</option>
+                  <option value="normal">Normal</option>
+                  <option value="urgent">Urgent</option>
+                </select>
+              </div>
+              <div class="form-group checkbox-group">
+                <label>
+                  <input type="checkbox" id="includeMaterials" />
+                  Include Materials
+                </label>
+              </div>
+            </div>
+            <div class="estimate-actions">
+              <button class="button primary" type="button" id="calculateEstimate">Calculate</button>
+            </div>
+          </form>
+          <div class="estimate-result" id="estimateResult" aria-live="polite">
+            <p class="result-label">Estimated Cost:</p>
+            <p class="result-value">ZMW 0</p>
+          </div>
+          <p class="estimate-disclaimer">This is an estimated cost. Final pricing may vary after inspection.</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div>
+        <h3>Voltive Electrical</h3>
+        <p>Trusted electrical services for safer homes and smarter businesses.</p>
+      </div>
+      <div>
+        <h4>Connect</h4>
+        <p class="social-links">
+          <a href="#">LinkedIn</a>
+          <a href="#">Facebook</a>
+          <a href="#">Instagram</a>
+        </p>
+      </div>
+      <div>
+        <h4>Contact</h4>
+        <p>info@voltive.com</p>
+        <p>(555) 123-4567</p>
+      </div>
+    </div>
+    <div class="footer-bar">
+      <p>© 2026 Voltive Electrical Services. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
